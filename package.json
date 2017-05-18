@@ -13,6 +13,13 @@
   },
   "author": "victor bennich",
   "license": "ISC",
+  "dependencies": {
+    "express": "^4.9.8",
+    "http": "*"
+  },
+  "engines": {
+    "node": "4.1.1"
+  },
   "bugs": {
     "url": "https://github.com/vbennich/bennich.se/issues"
   },
