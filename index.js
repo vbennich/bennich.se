@@ -1,8 +1,10 @@
-var http = require('http');
+var express = require('express');
+var app = express();
+var path = require('path');
 
-var server = http.createServer(function(req, res) {
-  res.writeHead(200);
-  res.end('My first heroku app');
+// viewed at http://localhost:8080
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/index.html'));
 });
-console.log(process.env.PORT);
-server.listen(process.env.PORT);
+
+app.listen(process.env.PORT);
