@@ -7,7 +7,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/Linkedin', function(req, res){
-  res.sendFile('www.linkedin.com/in/vbennich');
+  res.redirect('www.linkedin.com/in/vbennich');
 });
 
 
