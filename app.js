@@ -6,9 +6,6 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/public/index.html');
 });
 
-app.get('/Linkedin', function(req, res){
-  res.redirect('www.linkedin.com/in/vbennich');
-});
 
 
 
